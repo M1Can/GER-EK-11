@@ -1,0 +1,226 @@
+    /* css document */
+    
+    @charset "UTF-8";
+    *::selection {
+        color: blue;
+    }
+    
+    *:not(button){
+        font-family: 'Kiwi Maru', serif;
+    }
+    body {
+        background-color: rgba(11, 11, 11, 0.111);
+        text-align: center;
+        height: auto !important;
+        overflow: hidden !important;
+        font-size: 11px !important;
+        -webkit-print-color-adjust: exact;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    #sayısal {
+        border: 1px solid #ef0707;
+        margin: 11px;
+        display: inline-block;
+    }
+    /* sadece chrome başlangıç*/
+    
+     ::-webkit-scrollbar {
+        height: 11px;
+        ;
+    }
+    /*sadece chrome bitiş*/
+    footer{
+        display: block;
+        font-family: sans-serif;
+        font-size: 8px !important;
+        color: red;
+        background-color: whitesmoke;
+        text-align: center;
+        height: 57px;
+    }
+    
+    footer:hover {
+        background-color: wheat;
+        font-weight: 900;
+    }
+    
+    footer>strong {
+        color: navy;
+        font-family: 'Saira Stencil One', cursive !important;
+    }
+    
+    footer>strong:hover {
+        color: firebrick;
+        text-decoration: underline;
+        text-decoration-color: mediumturquoise;
+    }
+    
+    #döngüexpI {
+        color: navy;
+    }
+    
+    #döngüexpI:hover {
+        color: rgb(42, 12, 188);
+    }
+    
+    #sonuçprogres {
+        background-color: lightgray;
+        margin: 11px;
+        display: inline-block;
+    }
+    
+    .kalın {
+        color: red;
+    }
+    
+    .kalın::after {
+        content: "!! ";
+    }
+    
+    input {
+        border: none;
+        border: orangered 1px solid;
+        background-color: gray;
+        color: gold;
+        width: 100px;
+    }
+    
+    input:focus {
+        border-color: #fa0707;
+        color: red;
+        background-color: lightgray;
+        border-color: black;
+    }
+    
+    #orantı {
+        background-color: lightgray;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+    }
+    
+    #DİAyazdır {
+        display: inline-block;
+        background-color: lightgray;
+    }
+    
+    #DİAyazdır>button {
+        display: block;
+        margin: 11px;
+    }
+    
+    #DİAbaşlangıç {
+        background-color: lightgray;
+        display: inline-block;
+        padding-bottom: 0px;
+        padding-top: 5px;
+        width: 478px;
+    }
+    
+    #cevap {
+        margin-left: 10px;
+    }
+    
+    button {
+        border-color: #6c757d;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 5px;
+        height: 21px;
+        padding: 2px 3px;
+        margin: 3px 11px;
+        font-size: 13px;
+        font-family: 'Itim', cursive;
+        /*transform: skewY(1deg);
+        transition: transform 0.1s;*/
+        color: teal;
+    }
+    
+    button:hover {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+        /*transform: rotate(360deg);*/
+        cursor: pointer;
+    }
+    
+    button:focus {
+        box-shadow: 0 0 0 .25rem rgba(108, 117, 125, .5);
+    }
+    
+    #m {
+        font-family: 'Itim', cursive;
+        font-size: 1.5rem;
+        border: 1px groove navy;
+        background-color: gold;
+        width: 80%;
+        margin-left: 10%;
+        padding: 3px;
+    }
+    
+    #m:hover {
+        border-color: blue;
+    }
+    
+    #xy {
+        position: absolute;
+        left: auto;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+    }
+    
+    .DİAcan {
+        color: navy;
+    }
+    
+    div,
+    p {
+        color: navy;
+    }
+    
+    .DİAortsınıf {
+        position: relative;
+        left: 60px;
+        width: 66px;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .mouse{
+        position: absolute;
+        width: 25pt;
+        height: 25pt;
+        border: 1px solid rebeccapurple;
+        border-radius: 360px;
+    }
+
+     .DİAmesaj{
+        font-size: 20pt;
+        margin: 11px 0 11px 0 !important;
+        color: #116062;
+    }
+
+    #DİAmain{
+        width: 983px;
+        position: relative;
+        left: 17px;
+        border: 1px solid gold;
+        height: 527px;
+        background-color:#ffff;
+        overflow-y: auto;
+    }
+    
+    /* boootstrap*/
+    
+    .alert-primary {
+        color: #084298;
+        background-color: #cfe2ff;
+        border-color: #b6d4fe;
+    }
+    
+    .alert-primary .alert-link {
+        color: #06357a;
+    }

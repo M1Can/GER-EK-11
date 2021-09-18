@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" onload="DİAbelastungI()">
+
+<head>
+    <meta charset="UTF-8">
+    <title>denemeler/Javascript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./gerçek11.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+    <!-- favicon.io -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<!---->
+
+<body>
+    <header>
+        <h1 name="DİAtarihsellik" id="m"></h1>
+    </header>
+    <main id="DİAmain">
+        <aside id="DİAbaşlangıç">
+            <P id="VAYmesaj"></P>
+            <br>
+            <h3 id="DİAmessage">Esc tuşuna basarak arkaplanı değiştirebilirsin.</h3>
+            <nav onmousedown="işlemiwindowI()" onmouseup="işlemiwindowII()" id="aboutI" class="alert alert-primary">
+                Donanımın Hakkında(tıkla)</nav>
+            <br>
+            <nav id="varios"></nav>
+            <br>
+            <h4 id="DİAevents">OLAYLARI DENE</h4>
+            <p id="DİAeventstype"></p>
+            <br>
+            <div id="sonuç" class="alert alert-primary"></div>
+            <input type="number" id="cevap">
+            <button ondblclick="sonuçiçin()" class="btn btn-outline-secondary">Ortalama Sonucu</button>
+            <br>
+            <nav class="_dnmII"></nav>
+            <br>
+            <button onclick="DİAcharat()">rastgele Cümleler</button>
+            <br>
+            <div id="xy"></div>
+            <br>
+            <br>
+            <div id="sayısal" onmousedown="DİAhover()" onmouseup="DİAhoverund()" class="alert alert-primary">BAZI
+                SAYISAL ŞEYLER(tıkla)
+            </div>
+            <br>
+        </aside>
+
+        <br><br>
+
+        <article id="DİAyazdır">
+            <button ondblclick="yazdırI()" class="btn btn-outline-secondary">Bu Sayfayı Yazdır.</button>
+            <button ondblclick="yazdırII()" class="btn btn-outline-secondary">ÖncekiSayfaya Geçmek İçin.</button>
+            <button ondblclick="yazdırIII()" class="btn btn-outline-secondary">Burası Neresi?</button>
+        </article>
+        <br>
+
+        <h3 id="başlıkımsıI"></h3>
+
+        <section id="sonuçprogres">
+
+            <div id="MetinIII" class="alert alert-primary"></div>
+            <input type="number" id="c">
+
+            <button onclick="işlemisayıbilgi();" class="btn btn-outline-secondary">sayı hakkında bilgi için</button>
+
+            <br><br>
+
+            <div id="xx" class="alert alert-primary"></div>
+            <input type="number" id="SONUÇI">
+            <input type="number" id="SONUÇII">
+
+            <br>
+
+            <button ondblclick="matematikişlemI()" class="btn btn-outline-secondary">İki Kare Farkı</button>
+            <button ondblclick="matematikişlemII()" class="btn btn-outline-secondary">Toplamıın Karesi</button>
+
+            <br>
+
+            <h4 id="döngüexpI"></h4>
+
+            <p><b class="kalın">SORU </b>Üstteki Örünte Eksik Olan Sayıyı Bulun.</P>
+            <input type="text" onchange="döngüButonII(this.value)">
+            <br>
+            <br>
+            <div id="DİAısıdönüşüm">
+                <button id="DİAcdenf">celcius dan fahrenheit e</button>
+                <div id="DİAsbl1"></div>
+                <button id="DİAcdenk"> celcius dan kelvin e</button>
+                <div id="DİAsbl2"></div>
+                <button id="DİAfdenc">fahrenheit dan celcius a</button>
+                <div id="DİAsbl3"></div>
+                <button id="DİAfdenk">fahrenheit dan kelvin e</button>
+                <div id="DİAsbl4"></div>
+                <button id="DİAkdenc">kelvin den celcius a</button>
+                <div id="DİAsbl5"></div>
+                <button id="DİAkdenf">kelvin den fahrenheit a</button>
+                <div id="DİAsbl6"></div>
+                <br>
+                <div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <aside id="orantı">
+            <h4 class="DİAorantıbaşlık">Yüzdesini alıcağınız sayı</h4>
+            <input id="DİAorantımsıI" type="text"></input>
+            <h4 class="DİAorantıbaşlık">Aldığın sayının istediğin yüzdesi</h4>
+            <input id="DİAorantımsıII" type="text"></input>
+            <br>
+            <button onclick="DİAorantıbuton()" id="DİAorantıbuton" class="btn btn-outline-secondary">sonuç</button>
+            <div id="DİAyüzdesonuç" class="alert alert-primary"></div>
+            <br><br>
+            <button id="DİAortalamabtn">6 sayının OrtalamasI İÇİN</button>
+            <form id="DİAortalama"></form>
+            <button id="DİAortsonuç" style="display:none;">Ortalama al</button>
+            <p class="DİAyazsonuç"></p>
+        </aside>
+        <br>
+        <hr>
+
+        <aside class="DİAjquerybölges">
+            <h2 id="DİAjqrybşlk">JQUERY BÖLGESİ</h2>
+
+            <p id="DİAdnmp">MERHABA DÜNYA</p>
+
+            <button id="DİAgizle">SAYFAYI ÖLDÜR</button>
+        </aside>
+    </main>
+
+    <footer>
+        &raquo;<br>&copy; TÜM HAKLAR <strong>TAERUMMURAET </strong> TARAFINDAN SAKLIDIR
+        <br><br> all content copyright <strong>REMAİJ</strong> tr group from 2020 to &copy;<br>&laquo;
+    </footer>
+    <div name="xy"></div>
+    <script src="gerçek11.js" defer></script>
+</body>
+
+</html>
